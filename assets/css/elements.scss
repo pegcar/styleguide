@@ -1,0 +1,165 @@
+@import 'variables';
+@import 'placeholders_and_mixins';
+
+//
+// Car Display
+//
+.car-display > a {
+  display: block;
+}
+
+
+//Picture
+.car-display__picture {
+  height: 200px;
+  @extend %imageAsBackgroundCover;
+}
+.car-display__picture:hover {
+  filter: opacity(0.9);
+  -webkit-filter: opacity(0.9);
+}
+
+.car-display__picture--empty {
+  background-size: contain;
+}
+
+
+//Owner Details
+.owner__picture, .car-display__owner-details, .car-display__price {
+  display: inline-block
+}
+
+.owner__picture {
+  @extend %imageAsBackgroundContain;
+  width: 65px;
+  height: 65px;
+  border-radius: 100px;
+  border: 2px solid $white-hard;
+  position: relative;
+  top: -5px;
+}
+
+.car-display__owner-details{
+  margin-top: 5px;
+  vertical-align: top;
+  width: calc( 100% - 90px - 65px );
+  padding-left: 3px;
+
+  .owner__name, .owner__car, .owner__neighborhood {
+    color: $blue-hard;
+    letter-spacing: 0.4px;
+  }
+  .owner__name {
+    font-size: 12px;
+  }
+  .owner__car {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .owner__neighborhood {
+    font-size: 12px;
+    i {
+      color: $blue-hard;
+      padding-right: 2px;
+    }
+  }
+}
+
+.car-display__price{
+  margin-top: 5px;
+  vertical-align: top;
+  .price {
+    width: 90px;
+    height: 40px;
+    background-color: $blue-hard;
+    vertical-align: top;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 100px;
+  }
+  .money-symbol {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    vertical-align: top;
+  }
+  .price__value {
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .per-day {
+    width: 100%;
+    text-align: center;
+    color: $blue-hard;
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+//
+// Car Display Simple
+//
+
+.car-display--simple {
+  padding: 15px;
+  background-color: $white-soft;
+}
+
+.car-display--simple__picture {
+  @extend %imageAsBackgroundBoth;
+  height: 96px;
+}
+
+@media ( min-width: $screen-sm) {
+  .car-display--simple__picture {
+    height: 155px;}
+}
+
+@media ( min-width: $screen-md ) {
+  .car-display--simple {
+    max-width: 550px;
+    margin: 30px auto;
+  }
+}
+
+.car-display--simple__title  {
+  h4, h3 {
+    font-family: $fonts;
+    font-weight: 500;
+    color: $blue-hard;
+    margin: 0;
+  }
+}
+
+.car-display--simple__title {
+  margin-bottom: 15px;
+}
+
+.car-display--simple__content p {
+  font-family: $fonts;
+  color: $gray-hard;
+  line-height: 16px;
+  margin: 0;
+  line-height: 22px;
+}
+
+.car-display--simple__title h4 { font-size: 15px; }
+.car-display--simple__title h3 { font-size: 22px; }
+.car-display--simple__content p  { font-size: 14px; }
+
+@media ( min-width: $screen-sm ) {
+  .car-display--simple__title h4 { font-size: 16px; }
+  .car-display--simple__title h3 { font-size: 26px; }
+  .car-display--simple__content p  { font-size: 16px; }
+
+  .car-display--simple__text { padding: 30px 15px; }
+}
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+/*
+Error: Invalid CSS after "#003d60": expected expression (e.g. 1px, bold), was ";"
+        on line 1 of assets/css/_variables.sass
+        from line 1 of assets/css/elements.scss
+
+1: $blue-hard: #003d60;
+2: $blue-medium: #0065a0;
+3: $blue-soft: #2294d5;
+4: $blue-sky: #66ccff;
+5: 
+6: $blue-facebook: #3b5998;
+
+Backtrace:
+assets/css/_variables.sass:1
+assets/css/elements.scss:1
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:738:in `assert_done'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:76:in `parse'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:240:in `parse'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/script.rb:27:in `parse'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:1151:in `parse_script'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:757:in `parse_variable'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:642:in `parse_line'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:54:in `check_for_updates'
+/home/zapiano/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/rack.rb:51:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/connection.rb:86:in `block in pre_process'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/connection.rb:84:in `catch'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/connection.rb:84:in `pre_process'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/connection.rb:53:in `process'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/connection.rb:39:in `receive_data'
+/home/zapiano/.gem/ruby/2.3.0/gems/eventmachine-1.2.0.1/lib/eventmachine.rb:194:in `run_machine'
+/home/zapiano/.gem/ruby/2.3.0/gems/eventmachine-1.2.0.1/lib/eventmachine.rb:194:in `run'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/backends/base.rb:73:in `start'
+/home/zapiano/.gem/ruby/2.3.0/gems/thin-1.7.0/lib/thin/server.rb:162:in `start'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/thin.rb:19:in `run'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/lib/rack/server.rb:147:in `start'
+/home/zapiano/.gem/ruby/2.3.0/gems/rack-1.6.4/bin/rackup:4:in `<top (required)>'
+/home/zapiano/.gem/ruby/2.3.0/bin/rackup:23:in `load'
+/home/zapiano/.gem/ruby/2.3.0/bin/rackup:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"#003d60\": expected expression (e.g. 1px, bold), was \";\"\A         on line 1 of assets/css/_variables.sass\A         from line 1 of assets/css/elements.scss\A \A 1: $blue-hard: #003d60;\A 2: $blue-medium: #0065a0;\A 3: $blue-soft: #2294d5;\A 4: $blue-sky: #66ccff;\A 5: \A 6: $blue-facebook: #3b5998;"; }
