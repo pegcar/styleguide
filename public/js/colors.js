@@ -19,7 +19,7 @@ addLoadEvent(function() {
 
 
   for (var key in colors) {
-    $('.js--color-container').append("<span class='styleguide-color' title='"+colors[key]+"' style='background-color: "+ colors[key] +" '>"+key+" <br/> "+colors[key]+"</span>");
+    $('.js--color-container').append("<span class='styleguide-color' title='"+colors[key]+"' style='background-color: "+ colors[key] +";'><span style='background-color: white; color: black;'>"+key+" <br/> "+colors[key]+"</span></span>");
     console.log(colors[key]);
   }
 });

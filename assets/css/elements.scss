@@ -1,5 +1,7 @@
-@import 'variables';
+@import 'colors';
 @import 'placeholders_and_mixins';
+@import 'sizes';
+@import 'fonts';
 
 //
 // Car Display
@@ -113,12 +115,12 @@
   height: 96px;
 }
 
-@media ( min-width: $screen-sm) {
+@media ( min-width: $size-sm) {
   .car-display--simple__picture {
     height: 155px;}
 }
 
-@media ( min-width: $screen-md ) {
+@media ( min-width: $size-md ) {
   .car-display--simple {
     max-width: 550px;
     margin: 30px auto;
@@ -150,7 +152,7 @@
 .car-display--simple__title h3 { font-size: 22px; }
 .car-display--simple__content p  { font-size: 14px; }
 
-@media ( min-width: $screen-sm ) {
+@media ( min-width: $size-sm ) {
   .car-display--simple__title h4 { font-size: 16px; }
   .car-display--simple__title h3 { font-size: 26px; }
   .car-display--simple__content p  { font-size: 16px; }

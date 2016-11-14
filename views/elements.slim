@@ -1,28 +1,33 @@
+.u-section--small
+  .sub-header
+    span
+      h1 Elementos
 .container
-  h1 Elementos
+  h2 Fotos/Imagens
+
+  h3 Car tile
+
   .row
-    h2 Fotos/Imagens
-
-    h3 Car tile
-
-    .row
-      div class="owner-container car-highlights col-xs-12 col-sm-4"
-        a#spec--owner-box href="#"
-          .car-image style="background-image:url('/images/car.jpg')"
+    .col-xs-1.visible-xs
+    .col-xs-10.col-sm-4
+      .car-display
+        a href="#" alt='Carro'
+          .car-display__picture style="background-image:url('/images/car.jpg')"
         div
-          .owner__photo style="background-image: url('/images/avatar.jpg')"
-          .owner__details
-            .owner__name João da Silva
-            .owner__car Mercedez Benz
+          a href="#"
+            .owner__picture style="background-image:url('/images/avatar.jpg')"
+          .car-display__owner-details
+            .owner__name Batman
+            .owner__car Batmobile - Mercedez
             .owner__neighborhood
               span
                 i.glyphicon.glyphicon-map-marker
-              | Freguesia do Ó
-          .owner__car-price
+              | Gotham City
+          .car-display__price
             .price
               span.money-symbol
                 | R$
-              span.price__value 250
+              span.price__value 300
             .per-day por dia
   .row
     h2 Botões

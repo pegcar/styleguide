@@ -1,0 +1,222 @@
+@import '../fonts';
+@import '../colors';
+@import '../placeholders_and_mixins';
+@import '../sizes';
+
+//
+// Banners Backgrounds
+//
+
+//.landing_pages .banner { @include backgroundImage('/banners/landing.png'); }
+//.home .banner { @include backgroundImage('/banners/home.png'); }
+
+
+
+
+
+//
+//
+// Banner
+
+.banner {
+  height: 300px;
+  @media (min-width: $size-md) {
+    height: 430px;
+  }
+}
+
+.banner--big {
+  height: 400px;
+  @media (min-width: $size-md) {
+    height: 450px;
+  }
+}
+
+
+.banner {
+  text-align: center;
+  position: relative;
+  @extend %imageAsBackgroundCover;
+  padding: 0;
+  margin: 0;
+  > span {
+    display: inline-block;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  a i {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  a span {
+    vertical-align: middle;
+  }
+}
+
+.banner h1 {
+  font-family: $font-title;
+  color: $white-hard;
+  font-size: 30px;
+  @media (min-width: $size-md) {
+    font-size: 68px;
+  }
+}
+
+.banner p {
+  font-family: $fonts;
+  color: $white-hard;
+  font-size: 16px;
+  font-weight: 400;
+  @media (min-width: $size-md) {
+    font-size: 22px;
+  }
+}
+
+.banner-links a {
+  padding: 5px 0;
+  cursor: pointer;
+  color: $blue-sky;
+  text-align: center;
+  display: block;
+  :hover {
+    text-decoration: none;
+    color: $white-hard;
+    background-color: $blue-soft;
+  }
+
+  span {
+    padding: 2px;
+  }
+
+  @media (min-width: $size-sm) {
+    padding: 10px 6px 10px 10px;
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+//
+// Sub-header
+//
+
+.sub-header {
+  margin: 0;
+  padding: 14px 0;
+  background-color: $blue-medium;
+  position: relative;
+  height: 150px;
+  span {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: $font-title;
+    font-weight: 500;
+    margin: 0;
+    line-height: 26px;
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+    font-family: $fonts;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: $white-hard;
+  }
+  .alert-flash {
+    margin-bottom: -14px;
+  }
+  @media (min-width: $size-md) {
+    height: 120px;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      padding: 5px 0 0;
+      font-size: 16px;
+    }
+  }
+}
+// Sub-header--back
+
+.sub-header--back {
+  margin: 0;
+  padding: 14px 0;
+  background-color: $blue-medium;
+  span {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  a {
+    color: $white-hard;
+    font-family: $fonts;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  div {
+    padding-left: 0;
+    color: $white-hard;
+  }
+  .glyphicon {
+    float: right;
+    padding: 3px 0;
+    top: 2px;
+  }
+  .sub-header__arrow {
+    background-image: url('/images/arrow_right.png');
+    @extend %imageAsBackgroundBoth;
+    width: 21px;
+    height: 14px;
+    padding: 11px;
+    float: right;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: $font-title;
+    font-weight: 500;
+    margin: 0;
+    line-height: 26px;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    font-family: $fonts;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+    color: $white-hard;
+  }
+  .alert-flash {
+    margin-bottom: -14px;
+  }
+  @media (min-width: $size-md) {
+    font-size: 36px;
+    .sub-header h1 {
+      padding: 20px 0;
+    }
+  }
+}

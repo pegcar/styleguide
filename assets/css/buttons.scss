@@ -1,0 +1,202 @@
+@import 'fonts';
+@import 'placeholders_and_mixins';
+@import 'sizes';
+@import 'colors';
+
+//
+// Buttons
+//
+
+.btn-fill { width: 100%; }
+.btn-rounded { @extend %buttonBase; border-radius: 100px; }
+.btn-peaked { @extend %buttonBase; border-radius: 0; }
+
+.btn-icon {
+  @extend %buttonBase;
+  border-radius: 20px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn-rounded:hover { text-decoration: none; }
+.btn-peaked:hover { text-decoration: none; }
+
+.btn-rounded:focus { text-decoration: none; }
+.btn-peaked:focus { text-decoration: none; }
+
+
+
+
+//
+// Buttons Colors
+//
+.btn-border-blue-medium {
+  background-color: $white-hard;
+  border: 2px solid $blue-medium;
+}
+
+.btn-white {
+  background-color: $white-hard;
+  border: 1px solid $gray-hard;
+  color: $gray-hard;
+}
+
+.btn-white:hover{
+  color: $gray-hard;
+  background-color: $white-hard;
+}
+
+.btn-red-no {
+  background-color: $red-no;
+  color: $white-hard;
+}
+.btn-red-no:hover{
+  background-color: $red-hover;
+  color: white;
+}
+
+.btn-green {
+  background-color: $green-warn;
+  color: $white-hard;
+}
+.btn-green:hover{
+  background-color: $green-yes;
+  color: white;
+}
+
+.btn-blue-medium {
+  background-color: $blue-medium;
+  color: $white-hard;
+}
+.btn-blue-medium:hover {
+  background-color: $blue-hard;
+  color: $white-hard;
+}
+.btn-blue-medium:focus { color: $white-hard; }
+
+
+.btn-blue-soft {
+  background-color: $blue-soft;
+  color: $white-hard;
+}
+.btn-blue-soft:hover {
+  background-color: $blue-medium;
+  color: $white-hard;
+}
+
+
+.btn-orange {
+  background-color: $orange;
+  color: $white-hard;
+}
+.btn-orange:hover {
+  background-color: $orange-hard;
+  color: $white-hard;
+}
+.btn-orange:focus { color: $white-hard; }
+
+
+
+
+
+
+.btn-gray-medium {
+  background-color: $gray-medium;
+  color: $white-hard;
+}
+.btn-gray-medium:hover {
+  background-color: $gray-hard;
+  color: $white-hard;
+}
+
+.btn-hard-gray-opacity {
+  background-color: $gray-hard-opacity-20;
+  color: $white-hard;
+}
+.btn-hard-gray-opacity:hover {
+  background-color: $gray-hard-opacity-30;
+  color: $white-hard;
+}
+
+
+
+
+
+
+.btn-face--share {
+  background-image: url('/images/facebookLogo.png');
+  background-repeat: no-repeat;
+  background-position: 30px 16px;
+  background-size: 11px;
+  border-radius: 100px !important;
+  padding: 15px 30px 15px 50px !important;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background-color: $blue-facebook;
+  line-height: 21px;
+  margin: 0 auto;
+  color: $white-hard;
+  text-align: center;
+}
+
+.btn-face--share:hover {
+  background-color: $blue-facebook--hover;
+  color: $white-hard;
+  text-decoration: none;
+}
+
+.btn-face--share:focus {
+  text-decoration: none;
+  color: $white-hard;
+}
+
+.btn-search {
+  font-size: 20px;
+  font-weight: 500;
+  height: 100%;
+  width: 62px;
+  position: relative;
+  vertical-align: top;
+  border: none;
+  border-radius: 0 100px 100px 0;
+  @media (min-width: $size-md) {
+    width: 13%;
+    float: right;
+    font-size: 18px;
+  }
+}
+.btn-search img.search-img {
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+
+button:disabled, button:disabled:hover, buuton:disabled:active {
+  background-color: $gray-soft;
+  color: white;
+}
+
+.btn-disabled, .btn-disabled:hover, .btn-disabled:active {
+  background-color: $gray-soft;
+  color: white;
+}
+
+.btn-container--doubled {
+  div:first-child{
+    margin-bottom: 30px;
+    @media (min-width: $size-sm ) {
+      margin-bottom: 0;
+    }
+  }
+}

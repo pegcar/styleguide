@@ -1,9 +1,55 @@
-.main {
-  padding-top: 59px;
+@import 'colors';
+@import 'fonts';
+@import 'sizes';
+
+p {
+  font-size: 15px;
+  font-family: $fonts;
+  color: $gray-hard;
+  font-weight: 300;
 }
 
 h1 {
-  color: green;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: $font-title;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: $fonts;
+  color: $gray-hard;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $fonts;
+  color: $gray-hard;
+}
+
+@media (min-width: $size-md){
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+dl, dd, dt {
+  color: $gray-hard;
+}
+
+.main {
+  padding-top: 59px;
 }
 
 .styleguide-color {
